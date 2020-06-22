@@ -13043,6 +13043,7 @@ div#notebook {
     page-break-inside: avoid; 
   }
 }
+
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
@@ -13077,7 +13078,17 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://leomrocha.github.com">Leo's Home page</a> -- <a href="https://github.com/leomrocha/ud_conllu_v2.6/">Project's Repository</a></p>
+<a href="https://leomrocha.github.com">Leo's Home page</a> --
+  <a href="https://github.com/leomrocha/ud_conllu_v2.6/">Project's Repository</a> --
+  <em> License: <a href="https://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0
+<!--    TODO-->
+<!--    <span id="cc-attribution" class="icon">-->
+<!--  <img src="https://creativecommons.org/images/deed/cc_icon_white_x2.png" >-->
+<!--    <img src="https://creativecommons.org/images/deed/attribution_icon_white_x2.png">-->
+<!--    <img src="https://creativecommons.org/images/deed/sa_white_x2.png">-->
+<!--    </span>-->
+  </a> </em>
+</p>
 
 </div>
 </div>
@@ -13085,7 +13096,10 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="A-statistical-Exploration-of-Universal-Dependencies-Conllu-Files">A statistical Exploration of Universal Dependencies Conllu Files<a class="anchor-link" href="#A-statistical-Exploration-of-Universal-Dependencies-Conllu-Files">&#182;</a></h1><h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>While much work is being done in the current days on NLP and NLU, there is little work on describing why a certain length of transformer (or other as LSTM time steps) architecture has been chosen for the training, it is mostly arbitrary and depends on the goal of the work and resources available (mainly hardware). These decisions are hard once the model has been trained and there is nothing that can be done to extend the length of a transformer (for example) without having to retrain the entire network. There are however some works that tackle variable length sequences.</p>
+<h1 id="A-statistical-Exploration-of-Universal-Dependencies-Conllu-Files">A statistical Exploration of Universal Dependencies Conllu Files<a class="anchor-link" href="#A-statistical-Exploration-of-Universal-Dependencies-Conllu-Files">&#182;</a></h1>
+    <p><a href="https://leomrocha.github.com"> Leonardo M. Rocha  </a></p>
+  <p>This work is under  <em> License: <a href="https://creativecommons.org/licenses/by-sa/4.0/"> CC BY-SA 4.0</a> </em></p>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>While much work is being done in the current days on NLP and NLU, there is little work on describing why a certain length of transformer (or other as LSTM time steps) architecture has been chosen for the training, it is mostly arbitrary and depends on the goal of the work and resources available (mainly hardware). These decisions are hard once the model has been trained and there is nothing that can be done to extend the length of a transformer (for example) without having to retrain the entire network. There are however some works that tackle variable length sequences.</p>
 <p>This work presents the first complete analysis (from our knowledge) of the Universal Dependencies v2.6 dataset and presents the global and individual results by language.</p>
 <p>This work does not intend to be a conference level paper (that is why there are no references to papers on the subject), but an informational technical report that might help to better select the most effective compromise text or token length for your particular NLP application.</p>
 <p>The number of analyzed languages is 91, the token length is measured as the named UPOS tag in the dataset, while the character length is just that. There is no analysis on what constitutes a word or not, this means that a token includes the punctuation and other symbols presents in the text samples.</p>
